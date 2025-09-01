@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+
+:root {
+  --bg-color1: #1b1b1e;
+  --bg-color2: #53a3cb;
+  --bg-color3: #17171a;
+  --bg-color4: #090909;
+  --bg-color5: #fff;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.grid{
+    display: grid;
+}
+.flex {
+    display: flex;
+}
+.flow {
+    gap: 1rem;
+}
+.flow--small {
+    gap: .5rem;
+}
+
+
+body {
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color1);
+    color: var(--bg-color5);
+}
+
+
+.hero {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 2rem;
+    outline: 1px solid limegreen;
+   
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 3vw, 5rem);
+    font-weight: 700;
+    min-width: 15ch;
+}
+
+h1 span{
+    color: #53a3cb;
+}
+
+
+.pass-gen-btn {
+    border: 0;
+    background-color: #53a3cb;
+    color:#fff;
+    height: 2.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#subs-btn, #add-btn{
+    background-color: #53a3cb;
+    color: #fff;
+    border: 0;
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 3px;
+    font-size: 1.3rem;
+}
+.preferences{
+    font-size: 1.2rem;
+}
+
+#pass-length{
+    border: 0;
+    width: 2rem;
+    height: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.check {
+   filter: brightness(1.5) saturate(0.5);
+   transform: scale(1.5);
+}
+
+.password button{
+    height: 2.5rem;
+    border: 0;
+    background-color: #17171a;
+    
+}

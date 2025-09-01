@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random password generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <header>
+        <h1>
+          Generate a <br />
+          <span>random password</span>
+        </h1>
+        <p>
+          Create strong ans secure password to keep your account safe online.
+        </p>
+      </header>
+
+    <button class="pass-gen-btn">Generate Password</button>
+     
+
+      <div class="preferences grid flow--small">
+        <div class="flex flow--small">
+            <button id="subs-btn" data-type="subs" title="Sub 1">-</button>
+            <input type="number" id="pass-length" value="8" min="8" max="30" />
+            <button id="add-btn" data-type="add" title="Add 1">+</button>
+            <label for="pass-length">Password length</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" checked="" id="lowercase" class="check" />
+            <label for="lowercase">Lowercase characters</label>
+        </div>
+        <div>
+            <input type="checkbox" checked="" id="uppercase" class="check" />
+            <label for="uppercase">Uppercase characters</label>
+        </div>
+        <div>
+            <input type="checkbox" checked="" id="symbol" class="check" />
+            <label for="symbol">Symbols</label>
+        </div>
+        <div>
+            <input type="checkbox" checked="" id="numbers" class="check" />
+            <label for="numbers">Numbers</label>
+        </div>
+        
+      </div>
+      <div class="password grid flow--small">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </section>
+  </body>
+</html>
