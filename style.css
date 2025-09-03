@@ -60,12 +60,11 @@ body {
     width: 100%;
     height: 100%;
     padding: 5rem 2rem;
-    outline: 1px solid limegreen;
-   
+
 }
 
 header h1 {
-    font-size: clamp(2.5rem, 3vw, 5rem);
+    font-size: 2.5rem;
     font-weight: 700;
     min-width: 15ch;
 }
@@ -111,9 +110,31 @@ h1 span{
    transform: scale(1.5);
 }
 
-.password button{
+.passwords button{
     height: 2.5rem;
     border: 0;
-    background-color: #17171a;
+    color: #fff;
+    background-color: #090909;
     
+}
+
+@media (min-width: 35rem){
+    .pass-gen-btn{
+        max-width: 50%;
+    }
+
+    header h1 {
+        font-size: clamp(2.5rem, 3vw + 1rem, 4rem);
+    }
+
+    .passwords {
+        max-width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        display: grid;
+        grid-template-columns: 1fr  1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
 }
