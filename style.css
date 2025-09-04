@@ -74,7 +74,7 @@ h1 span{
 }
 
 
-.pass-gen-btn {
+#pass-gen-btn {
     border: 0;
     background-color: #53a3cb;
     color:#fff;
@@ -93,11 +93,24 @@ h1 span{
     border-radius: 3px;
     font-size: 1.3rem;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
 .preferences{
     font-size: 1.2rem;
 }
 
-#pass-length{
+#length-counter{
     border: 0;
     width: 2rem;
     height: 1.5rem;
@@ -117,14 +130,52 @@ h1 span{
     background-color: #090909;
     
 }
+.invisible {
+    display: none;
+}
+#error {
+    color: #fff; 
+    font-weight: bold;
+}
+
+#copyToClipboard {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color2);
+  opacity: 0;
+}
+
+.popUp {
+  animation: popUp 2s ease-in-out 1;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 @media (min-width: 35rem){
-    .pass-gen-btn{
+    #pass-gen-btn{
         max-width: 50%;
     }
 
     header h1 {
         font-size: clamp(2.5rem, 3vw + 1rem, 4rem);
+    }
+    header {
+        max-width: 50%;
     }
 
     .passwords {

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random password generator</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
   </head>
   <body>
+    <div id="copyToClipboard">Copied to clipboard!</div>
     <section class="hero">
       <header>
         <h1>
@@ -19,14 +20,16 @@
         </p>
       </header>
 
-    <button class="pass-gen-btn">Generate Password</button>
+    <button id="pass-gen-btn">Generate Password</button>
+
+    <p id="error" class="invisible">⚠️ Please select at least one option.</p>
      
 
       <div class="preferences grid flow--small">
-        <div class="flex flow--small">
-            <button id="subs-btn" data-type="subs" title="Sub 1">-</button>
-            <input type="number" id="pass-length" value="8" min="8" max="30" />
-            <button id="add-btn" data-type="add" title="Add 1">+</button>
+        <div id="pass-length" class="flex flow--small">
+            <button class="add-sub-btn" id="subs-btn" data-type="subs" title="Sub 1">-</button>
+            <input type="number" id="length-counter" value="8" min="8" max="30" />
+            <button class="add-sub-btn" id="add-btn" data-type="add" title="Add 1">+</button>
             <label for="pass-length">Password length</label>
         </div>
         
@@ -39,7 +42,7 @@
             <label for="uppercase">Uppercase characters</label>
         </div>
         <div>
-            <input type="checkbox" checked="" id="symbol" class="check" />
+            <input type="checkbox" checked="" id="symbols" class="check" />
             <label for="symbol">Symbols</label>
         </div>
         <div>
@@ -47,12 +50,13 @@
             <label for="numbers">Numbers</label>
         </div>
         
+        
       </div>
       <div class="passwords grid flow--small">
-        <button id="pass1">password 1</button>
-        <button id="pass2">password 2</button>
-        <button id="pass3">password 3</button>
-        <button id="pass4">password 4</button>
+        <button class="random-password" id="pass1">password 1</button>
+        <button class="random-password" id="pass2">password 2</button>
+        <button class="random-password" id="pass3">password 3</button>
+        <button class="random-password" id="pass4">password 4</button>
       </div>
     </section>
   </body>
