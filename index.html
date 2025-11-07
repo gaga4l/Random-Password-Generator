@@ -20,37 +20,48 @@
         </p>
       </header>
 
-    <button id="pass-gen-btn">Generate Password</button>
+      <button id="pass-gen-btn">Generate Password</button>
 
-    <p id="error" class="invisible">⚠️ Please select at least one option.</p>
-     
+      <p id="error" class="invisible">⚠️ Please select at least one option.</p>
 
       <div class="preferences grid flow--small">
         <div id="pass-length" class="flex flow--small">
-            <button class="add-sub-btn" id="subs-btn" data-type="subs" title="Sub 1">-</button>
-            <input type="number" id="length-counter" value="8" min="8" max="30" />
-            <button class="add-sub-btn" id="add-btn" data-type="add" title="Add 1">+</button>
-            <label for="pass-length">Password length</label>
+          <button
+            class="add-sub-btn"
+            id="subs-btn"
+            data-type="subs"
+            title="Sub 1"
+          >
+            -
+          </button>
+          <input type="number" id="length-counter" value="8" min="8" max="30" />
+          <button
+            class="add-sub-btn"
+            id="add-btn"
+            data-type="add"
+            title="Add 1"
+          >
+            +
+          </button>
+          <label for="pass-length">Password length</label>
         </div>
-        
+
         <div>
-            <input type="checkbox" checked="" id="lowercase" class="check" />
-            <label for="lowercase">Lowercase characters</label>
+          <input type="checkbox" checked="" id="lowercase" class="check" />
+          <label for="lowercase">Lowercase characters</label>
         </div>
         <div>
-            <input type="checkbox" checked="" id="uppercase" class="check" />
-            <label for="uppercase">Uppercase characters</label>
+          <input type="checkbox" checked="" id="uppercase" class="check" />
+          <label for="uppercase">Uppercase characters</label>
         </div>
         <div>
-            <input type="checkbox" checked="" id="symbols" class="check" />
-            <label for="symbol">Symbols</label>
+          <input type="checkbox" checked="" id="symbols" class="check" />
+          <label for="symbol">Symbols</label>
         </div>
         <div>
-            <input type="checkbox" checked="" id="numbers" class="check" />
-            <label for="numbers">Numbers</label>
+          <input type="checkbox" checked="" id="numbers" class="check" />
+          <label for="numbers">Numbers</label>
         </div>
-        
-        
       </div>
       <div class="passwords grid flow--small">
         <button class="random-password" id="pass1">password 1</button>
