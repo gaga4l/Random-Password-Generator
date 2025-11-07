@@ -1,6 +1,6 @@
 # Random Password Generator
 
-This project is part of the Solo Project section of the "The Front-End Developer Path", where the student is required to finish the project on their own without extensive help.
+This project is part of the Scrimba's Solo Project section of the "The Front-End Developer Path", where the student is required to finish the project on their own without extensive help.
 This application is a program that allows you to generate a random password, then lets you copy the password for usage onto your clipboard.
 
 ## Table of contents
